@@ -1,4 +1,4 @@
-function recusedModerateTransaction(userName, tokenLink) {
+function recusedModerateTransaction(userName, support_email) {
   return `
 <!DOCTYPE html>
 <html lang="en">
@@ -204,7 +204,7 @@ function recusedModerateTransaction(userName, tokenLink) {
           text-align: center;
         "
       >
-        Hi, <b> {{userName}}</b>
+        Hi, <b> ${userName}</b>
       </h1>
       <div
         style="
@@ -229,7 +229,7 @@ function recusedModerateTransaction(userName, tokenLink) {
         style="display: flex; justify-content: center; margin-top: 60px"
       >
         <a
-          href="{{support_email}}"
+          href="${support_email}"
           style="
             display: inline-block;
             padding: 14px 60px;
