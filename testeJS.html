@@ -1,5 +1,20 @@
-function recusedModerateTransaction(userName, support_email, body_message) {
-  return `
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Email Template Test</title>
+  </head>
+  <body>
+    <div id="emailContent"></div>
+
+    <script>
+      function recusedModerateTransaction(
+        userName,
+        support_email,
+        body_message
+      ) {
+        return `
       
   <!DOCTYPE html>
   <html lang="en">
@@ -114,4 +129,14 @@ function recusedModerateTransaction(userName, support_email, body_message) {
   
   
   `;
-}
+      }
+
+      var userName = "John Doe";
+      var tokenLink = "https://example.com/register";
+      var body_message =
+        "Your transaction has been recused. Please contact us for more information.";
+      document.getElementById("emailContent").innerHTML =
+        recusedModerateTransaction(userName, tokenLink, body_message);
+    </script>
+  </body>
+</html>
