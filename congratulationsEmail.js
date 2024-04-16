@@ -1,16 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Email Template Test</title>
-  </head>
-  <body>
-    <div id="emailContent"></div>
-
-    <script>
-      function inviteRegister(userName) {
-        return `
+function inviteRegister(userName) {
+  return `
   <!DOCTYPE html>
   <html lang="en">
     <head>
@@ -111,14 +100,4 @@
   
 
 `;
-      }
-
-      var userName = "John Doe";
-      var tokenLink = "https://example.com/register";
-      var body_message =
-        "Your transaction has been recused. Please contact us for more information.";
-      document.getElementById("emailContent").innerHTML =
-        inviteRegister(userName);
-    </script>
-  </body>
-</html>
+}
